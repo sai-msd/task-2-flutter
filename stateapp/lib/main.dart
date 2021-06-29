@@ -70,7 +70,52 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Center(
+          child: Text(
+            "my app",
+            style: TextStyle(color: Colors.black, fontSize: 25.0),
+          ),
+        ),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            ListTile(
+              title: Text(
+                "scorecard",
+              ),
+              trailing: Icon(Icons.sports_cricket),
+            ),
+            Divider(
+              thickness: 2,
+              color: Colors.blue,
+            ),
+            ListTile(
+              title: Text("summary"),
+              trailing: Icon(Icons.sports_cricket_outlined),
+            ),
+            Divider(
+              thickness: 2,
+              color: Colors.blue,
+            ),
+            ListTile(
+              title: Text("statistics"),
+              trailing: Icon(Icons.sports_cricket_rounded),
+            ),
+            Divider(
+              thickness: 2,
+              color: Colors.blue,
+            ),
+            ListTile(
+              title: Text("match result"),
+              trailing: Icon(Icons.sports_cricket_sharp),
+            ),
+            Divider(
+              thickness: 2,
+              color: Colors.blue,
+            ),
+          ],
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
