@@ -226,8 +226,16 @@ class secondscreen extends StatefulWidget {
 class _secondscreenState extends State<secondscreen> {
   @override
   Widget build(BuildContext context) {
-    return (Container(
-      child: Center(child: Text('thanks for submitting')),
+    return Scaffold(
+        body: Container(
+      child: Center(
+          child: Text(
+        'thanks for submitting',
+        style: TextStyle(
+          color: Colors.blue,
+          fontSize: 25.0,
+        ),
+      )),
     ));
   }
 }
