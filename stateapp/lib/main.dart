@@ -154,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   child: Text(
                     "submit",
-                    style: TextStyle(color: Colors.red),
+                    style: TextStyle(color: Colors.black),
                   )),
             ),
             Container(
@@ -227,15 +227,264 @@ class _secondscreenState extends State<secondscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      child: Center(
-          child: Text(
-        'thanks for submitting',
-        style: TextStyle(
-          color: Colors.blue,
-          fontSize: 25.0,
+        appBar: AppBar(
+          title: Center(
+            child: Text(
+              "secondscreen",
+              style: TextStyle(color: Colors.black, fontSize: 25.0),
+            ),
+          ),
         ),
-      )),
-    ));
+        drawer: Drawer(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: ElevatedButton(
+                    style: ButtonStyle(),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return thirdscreen();
+                      }));
+                    },
+                    child: Text(
+                      "submit",
+                      style: TextStyle(color: Colors.white),
+                    )),
+              ),
+            ],
+          ),
+        ),
+        body: Container(
+          child: Center(
+              child: Text(
+            'thanks for submitting',
+            style: TextStyle(
+              color: Colors.blue,
+              fontSize: 25.0,
+            ),
+          )),
+        ));
+  }
+}
+
+class thirdscreen extends StatefulWidget {
+  const thirdscreen({Key? key}) : super(key: key);
+
+  @override
+  _thirdscreenState createState() => _thirdscreenState();
+}
+
+class _thirdscreenState extends State<thirdscreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text(
+            "thirdscreen",
+            style: TextStyle(color: Colors.black, fontSize: 25.0),
+          ),
+        ),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: ElevatedButton(
+                  style: ButtonStyle(),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return fourthscreen();
+                    }));
+                  },
+                  child: Text(
+                    "submit",
+                    style: TextStyle(color: Colors.white),
+                  )),
+            ),
+          ],
+        ),
+      ),
+      body: Container(),
+    );
+  }
+}
+
+class fourthscreen extends StatefulWidget {
+  const fourthscreen({Key? key}) : super(key: key);
+
+  @override
+  _fourthscreenState createState() => _fourthscreenState();
+}
+
+class _fourthscreenState extends State<fourthscreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text(
+            "fourthscreen",
+            style: TextStyle(color: Colors.black, fontSize: 25.0),
+          ),
+        ),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: ElevatedButton(
+                  style: ButtonStyle(),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return fifthscreen();
+                    }));
+                  },
+                  child: Text(
+                    "submit",
+                    style: TextStyle(color: Colors.white),
+                  )),
+            ),
+          ],
+        ),
+      ),
+      body: Container(),
+    );
+  }
+}
+
+class fifthscreen extends StatefulWidget {
+  const fifthscreen({Key? key}) : super(key: key);
+
+  @override
+  _fifthscreenState createState() => _fifthscreenState();
+}
+
+class _fifthscreenState extends State<fifthscreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text(
+            "fifthscreen",
+            style: TextStyle(color: Colors.black, fontSize: 25.0),
+          ),
+        ),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: ElevatedButton(
+                  style: ButtonStyle(),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return sixthscreen();
+                    }));
+                  },
+                  child: Text(
+                    "submit",
+                    style: TextStyle(color: Colors.white),
+                  )),
+            ),
+          ],
+        ),
+      ),
+      body: Container(),
+    );
+  }
+}
+
+class sixthscreen extends StatefulWidget {
+  const sixthscreen({Key? key}) : super(key: key);
+
+  @override
+  _sixthscreenState createState() => _sixthscreenState();
+}
+
+class _sixthscreenState extends State<sixthscreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text(
+            "sixthscreen",
+            style: TextStyle(color: Colors.black, fontSize: 25.0),
+          ),
+        ),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: ElevatedButton(
+                  style: ButtonStyle(),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return homescreen();
+                    }));
+                  },
+                  child: Text(
+                    "submit",
+                    style: TextStyle(color: Colors.white),
+                  )),
+            ),
+          ],
+        ),
+      ),
+      body: Container(),
+    );
+  }
+}
+
+class homescreen extends StatefulWidget {
+  const homescreen({Key? key}) : super(key: key);
+
+  @override
+  _homescreenState createState() => _homescreenState();
+}
+
+class _homescreenState extends State<homescreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text(
+              "homescreen",
+              style: TextStyle(color: Colors.black, fontSize: 25.0),
+            ),
+          ),
+        ),
+        body: Center(
+          child: ListView(
+            children: [
+              Center(
+                  child: Text(
+                'welcome to homescreen',
+                style: TextStyle(fontSize: 25.0),
+              )),
+              Center(
+                child: Image.network(
+                  'https://th.bing.com/th?id=OIF.ok8nCxy%2bRdTjjjPa2oXiuA&w=141&h=152&c=7&o=5&dpr=1.25&pid=1.7',
+                  height: 500.0,
+                  width: 300.0,
+                ),
+              )
+            ],
+          ),
+        ));
   }
 }
